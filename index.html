@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="a.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="login-page">
+        <div class="form">
+          <form class="login-form" name="myForm">
+            <p>Buat jaga jaga ini bukan mawar, usernamenya PresidenYustisKeren, passnya 6 digit ultah kmu hehe</p>
+            
+            <input type="text" placeholder="username" name="fname"/>
+            <input type="password" placeholder="password" name="fpass"/>
+            <button  type="button" onclick="check()">login</button>
+          </form>
+        </div>
+      </div>
+      <script>
+          alert('HAPPY 21 WAR');
+          alert('I make this seharian penuh jadi ga mau tau kmu hrus siapin waktu bntar buat explore this surpirises hehe');
+          function check()/*function to check userid & password*/
+        {
+            let x = document.forms["myForm"]["fname"].value;
+            let a = x.toLowerCase();
+            let y = document.forms["myForm"]["fpass"].value;
+            if((x=="mawar gracia"&&(y=='240401'))){
+                alert("YEAY, WELCOME WAR!!!!");
+                window.open('utama.html');
+            }else{
+                alert("Bukan mawang ya kamu, Hanya mawang yang boleh buka");
+            }
+        }
+    
+    </script>
+</body>
+</html>

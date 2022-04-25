@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="java.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="sini"><h1>click anywhere,ntar bakal ada foto yang nunjuk ke mouse kmu hehe. Have fun!</h1><h2>Pssstt, ada beberapa foto ucul loh </h2></div>
+
+    <script>
+        var gmbar = "1";
+        var x,y;
+        window.addEventListener('click', function clickListner(ev){
+            console.log(ev.clientX);
+            x=Math.ceil(ev.clientX/113);
+            y=Math.ceil(ev.clientY/108);
+            console.log(x+'_'+y);
+            if (x>17||y>10){
+                document.getElementById("sini").innerHTML="<h1>kelewatan bang</h1><br><h2>Press Space kalau kesusahan nyari all of the cutie photo</h2>";
+
+            }else{
+                document.getElementById("sini").innerHTML="<img src='2/"+x+"_"+y+".jpg'>";
+            }
+        })
+
+        window.addEventListener('keydown', function clickListner(ev){
+            if(ev.key==" "){
+                document.getElementById("sini").innerHTML="<img src='2/surprise.jpg'>";
+            }
+        })
+    </script>
+</body>
+</html>
